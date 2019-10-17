@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>Underground navigation in global mode - 4.13</title>
+  <style>
+    html,
+    body,
+    #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    #menu {
+      padding: 1em;
+      text-align: center;
+    }
+
+    #underGroundMenu,
+    #balsamiq {
+      padding: 1em;
+      text-align: center;
+      width: 200px;
+    }
+
+    button {
+      display: block;
+      margin: 0 auto;
+      margin-top: 1em;
+    }
+
+  </style>
+
+  <link rel="stylesheet" href="https://js.arcgis.com/4.13/esri/themes/light/main.css" />
+
+<body>
+  <div id="viewDiv"></div>
+  <div id="underGroundMenu" class="esri-widget">
+    <div id="opacityInput" class = "esri-icon-checkbox-checked"></div>
+    <label for="opacityInput">See through ground</label>
+    <button id="undergroundBtn">Go underground</button>
+  </div>
+  <div id="balsamiq" class="esri-widget">
+    <button id="LaunchMockUpBtn">Launch SHPR2</button>
+  </div>
+  <script>
+    var dojoConfig = {
+      async: true // Places Dojo loader into asynchronous mode. Default is synchronous
+    };
+  </script>
+  <script src="https://js.arcgis.com/4.13/"></script>
+  <script src="js/globalVariables.js"></script>
+  <script src="js/globalFunctions.js"></script>
+  <script src="js/standardWidgets.js"></script>
+  <script src="js/3dScene.js"></script>
+</body>
+
+</html>
